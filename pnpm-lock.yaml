@@ -18,7 +18,7 @@ devDependencies:
   '@vue/cli-plugin-typescript': 4.5.9_0cfd3ffae15854f09b58a8bf63330cf4
   '@vue/cli-plugin-unit-mocha': 4.5.9_@vue+cli-service@4.5.9
   '@vue/cli-plugin-vuex': 4.5.9_@vue+cli-service@4.5.9
-  '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+  '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
   '@vue/compiler-sfc': 3.0.2_vue@3.0.2
   '@vue/eslint-config-prettier': 6.0.0_4329b1e03e6c109bedf9f5e587df19a9
   '@vue/eslint-config-typescript': 5.1.0_14aa221616b216486f2a56cfef178bb3
@@ -1106,6 +1106,7 @@ packages:
       integrity: sha1-XWftQ/P9QaadS5/3tW58DR0KgeU=
       tarball: '@hapi/address/download/@hapi/address-2.1.4.tgz'
   /@hapi/bourne/1.3.2:
+    deprecated: This version has been deprecated and is no longer supported or maintained
     dev: true
     resolution:
       integrity: sha1-CnCVreoGckPOMoPhtWuKj0U7JCo=
@@ -1333,8 +1334,7 @@ packages:
     dev: true
     optional: true
     resolution:
-      integrity: sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
-      tarball: '@types/parse-json/download/@types/parse-json-4.0.0.tgz'
+      integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
   /@types/q/1.5.4:
     dev: true
     resolution:
@@ -1428,6 +1428,7 @@ packages:
       functional-red-black-tree: 1.0.1
       regexpp: 3.1.0
       tsutils: 3.17.1_typescript@3.9.7
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
@@ -1435,6 +1436,9 @@ packages:
       '@typescript-eslint/parser': ^2.0.0
       eslint: ^5.0.0 || ^6.0.0
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-b4zopGx96kpvHRcdK7j7rm2sK+k=
       tarball: '@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-2.34.0.tgz?cache=0&sync_timestamp=1605738125461&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-2.34.0.tgz'
@@ -1461,12 +1465,16 @@ packages:
       '@typescript-eslint/typescript-estree': 2.34.0_typescript@3.9.7
       eslint: 6.8.0
       eslint-visitor-keys: 1.3.0
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-UCUmMMoxloVCDpo5ygX+GFola8g=
       tarball: '@typescript-eslint/parser/download/@typescript-eslint/parser-2.34.0.tgz?cache=0&sync_timestamp=1605738132551&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-2.34.0.tgz'
@@ -1479,11 +1487,15 @@ packages:
       lodash: 4.17.20
       semver: 7.3.2
       tsutils: 3.17.1_typescript@3.9.7
+      typescript: 3.9.7
     dev: true
     engines:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     peerDependencies:
       typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-FK62NTs57wcyzH8bgoUpSTfPN9U=
       tarball: '@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.34.0.tgz'
@@ -1651,7 +1663,7 @@ packages:
     dependencies:
       '@babel/core': 7.12.3
       '@vue/babel-preset-app': 4.5.9_vue@3.0.2
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       babel-loader: 8.2.1_427212bc1158d185e577033f19ca0757
       cache-loader: 4.1.0_webpack@4.44.2
@@ -1666,7 +1678,7 @@ packages:
       tarball: '@vue/cli-plugin-babel/download/@vue/cli-plugin-babel-4.5.9.tgz'
   /@vue/cli-plugin-e2e-nightwatch/4.5.9_e400434793ce4b7da85c87649fd21002:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       chromedriver: 84.0.1
       deepmerge: 4.2.2
@@ -1687,7 +1699,7 @@ packages:
       tarball: '@vue/cli-plugin-e2e-nightwatch/download/@vue/cli-plugin-e2e-nightwatch-4.5.9.tgz'
   /@vue/cli-plugin-eslint/4.5.9_6778c0324b153720448c6ab0d5359212:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       eslint: 6.8.0
       eslint-loader: 2.2.1_eslint@6.8.0+webpack@4.44.2
@@ -1704,7 +1716,7 @@ packages:
       tarball: '@vue/cli-plugin-eslint/download/@vue/cli-plugin-eslint-4.5.9.tgz'
   /@vue/cli-plugin-pwa/4.5.9_@vue+cli-service@4.5.9:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       webpack: 4.44.2
       workbox-webpack-plugin: 4.3.1_webpack@4.44.2
@@ -1716,7 +1728,7 @@ packages:
       tarball: '@vue/cli-plugin-pwa/download/@vue/cli-plugin-pwa-4.5.9.tgz'
   /@vue/cli-plugin-router/4.5.9_@vue+cli-service@4.5.9:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
     dev: true
     peerDependencies:
@@ -1727,7 +1739,7 @@ packages:
   /@vue/cli-plugin-typescript/4.5.9_0cfd3ffae15854f09b58a8bf63330cf4:
     dependencies:
       '@types/webpack-env': 1.15.3
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       '@vue/compiler-sfc': 3.0.2_vue@3.0.2
       cache-loader: 4.1.0_webpack@4.44.2
@@ -1754,7 +1766,7 @@ packages:
       tarball: '@vue/cli-plugin-typescript/download/@vue/cli-plugin-typescript-4.5.9.tgz'
   /@vue/cli-plugin-unit-mocha/4.5.9_@vue+cli-service@4.5.9:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
       '@vue/cli-shared-utils': 4.5.9
       jsdom: 15.2.1
       jsdom-global: 3.0.2_jsdom@15.2.1
@@ -1768,14 +1780,14 @@ packages:
       tarball: '@vue/cli-plugin-unit-mocha/download/@vue/cli-plugin-unit-mocha-4.5.9.tgz'
   /@vue/cli-plugin-vuex/4.5.9_@vue+cli-service@4.5.9:
     dependencies:
-      '@vue/cli-service': 4.5.9_94b68c43ee632d47f21ec6c4ba43cad3
+      '@vue/cli-service': 4.5.9_0396c23fb41a1d998b75793382dc0f96
     dev: true
     peerDependencies:
       '@vue/cli-service': ^3.0.0 || ^4.0.0-0
     resolution:
       integrity: sha1-WujxUAx+KUBrAvrILM6uq4bB6Do=
       tarball: '@vue/cli-plugin-vuex/download/@vue/cli-plugin-vuex-4.5.9.tgz'
-  /@vue/cli-service/4.5.9_94b68c43ee632d47f21ec6c4ba43cad3:
+  /@vue/cli-service/4.5.9_0396c23fb41a1d998b75793382dc0f96:
     dependencies:
       '@intervolga/optimize-cssnano-plugin': 1.0.6_webpack@4.44.2
       '@soda/friendly-errors-webpack-plugin': 1.7.1_webpack@4.44.2
@@ -1819,7 +1831,7 @@ packages:
       lodash.transform: 4.6.0
       mini-css-extract-plugin: 0.9.0_webpack@4.44.2
       minimist: 1.2.5
-      pnp-webpack-plugin: 1.6.4
+      pnp-webpack-plugin: 1.6.4_typescript@3.9.7
       portfinder: 1.0.28
       postcss-loader: 3.0.0
       sass-loader: 8.0.2_sass@1.29.0
@@ -1847,6 +1859,7 @@ packages:
       raw-loader: '*'
       sass-loader: '*'
       stylus-loader: '*'
+      typescript: '*'
       vue-template-compiler: ^2.0.0
     peerDependenciesMeta:
       '@vue/compiler-sfc':
@@ -2612,8 +2625,7 @@ packages:
       node: '>= 4.0.0'
     optional: true
     resolution:
-      integrity: sha1-YCzUtG6EStTv/JKoARo8RuAjjcI=
-      tarball: at-least-node/download/at-least-node-1.0.0.tgz
+      integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
   /atob/2.1.2:
     dev: true
     engines:
@@ -3825,8 +3837,7 @@ packages:
       node: '>=8'
     optional: true
     resolution:
-      integrity: sha1-2k/uhTxS9rHmk19BwaL8UL1KmYI=
-      tarball: cosmiconfig/download/cosmiconfig-6.0.0.tgz
+      integrity: sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg==
   /create-ecdh/4.0.4:
     dependencies:
       bn.js: 4.11.9
@@ -4197,6 +4208,7 @@ packages:
       tarball: debug/download/debug-4.2.0.tgz
   /debug/4.2.0_supports-color@6.1.0:
     dependencies:
+      ms: 2.1.2
       supports-color: 6.1.0
     dev: true
     engines:
@@ -5274,7 +5286,7 @@ packages:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
       '@nodelib/fs.walk': 1.2.4
-      glob-parent: 5.1.0
+      glob-parent: 5.1.1
       merge2: 1.4.1
       micromatch: 4.0.2
       picomatch: 2.2.2
@@ -5568,8 +5580,7 @@ packages:
       yarn: '>=1.0.0'
     optional: true
     resolution:
-      integrity: sha1-eTJthpeXkG+osk4qvPlCH8gFRQ0=
-      tarball: fork-ts-checker-webpack-plugin/download/fork-ts-checker-webpack-plugin-5.2.1.tgz
+      integrity: sha512-SVi+ZAQOGbtAsUWrZvGzz38ga2YqjWvca1pXQFUArIVXqli0lLoDQ8uS0wg0kSpcwpZmaW5jVCZXQebkyUQSsw==
   /form-data/2.3.3:
     dependencies:
       asynckit: 0.4.0
@@ -5643,8 +5654,7 @@ packages:
       node: '>=10'
     optional: true
     resolution:
-      integrity: sha1-kQ2gBiQ3ukw5/t2GPxZ1zP78ufw=
-      tarball: fs-extra/download/fs-extra-9.0.1.tgz?cache=0&sync_timestamp=1598879595718&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffs-extra%2Fdownload%2Ffs-extra-9.0.1.tgz
+      integrity: sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   /fs-minipass/2.1.0:
     dependencies:
       minipass: 3.1.3
@@ -5658,8 +5668,7 @@ packages:
     dev: true
     optional: true
     resolution:
-      integrity: sha1-SoLzaUQ2XmGfRFTZ//EGVTBnt4E=
-      tarball: fs-monkey/download/fs-monkey-1.0.1.tgz
+      integrity: sha512-fcSa+wyTqZa46iWweI7/ZiUfegOZl0SG8+dltIwFXo7+zYU9J9kpS3NB6pZcSlJdhvIwp81Adx2XhZorncxiaA==
   /fs-write-stream-atomic/1.0.10:
     dependencies:
       graceful-fs: 4.2.4
@@ -5684,6 +5693,8 @@ packages:
     engines:
       node: '>= 4.0'
     optional: true
+    os:
+      - darwin
     requiresBuild: true
     resolution:
       integrity: sha1-8yXLBFVZJCi88Rs4M3DvcOO/zDg=
@@ -5693,6 +5704,8 @@ packages:
     engines:
       node: ^8.16.0 || ^10.6.0 || >=11.0.0
     optional: true
+    os:
+      - darwin
     resolution:
       integrity: sha1-+3OHA66NL5/pAMM4Nt3r7ouX8j4=
       tarball: fsevents/download/fsevents-2.1.3.tgz
@@ -7223,8 +7236,7 @@ packages:
     optionalDependencies:
       graceful-fs: 4.2.4
     resolution:
-      integrity: sha1-vFWyY0eTxnnsZAMJTrE2mKbsCq4=
-      tarball: jsonfile/download/jsonfile-6.1.0.tgz
+      integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==
   /jsonify/0.0.0:
     dev: true
     resolution:
@@ -7355,8 +7367,7 @@ packages:
       node: '>=8.9.0'
     optional: true
     resolution:
-      integrity: sha1-5MrOW4FtQloWa18JfhDNErNgZLA=
-      tarball: loader-utils/download/loader-utils-2.0.0.tgz
+      integrity: sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
   /locate-path/3.0.0:
     dependencies:
       p-locate: 3.0.0
@@ -7649,8 +7660,7 @@ packages:
       node: '>= 4.0.0'
     optional: true
     resolution:
-      integrity: sha1-+UOOYitazR2qikrhYMSW/dEyWyY=
-      tarball: memfs/download/memfs-3.2.0.tgz
+      integrity: sha512-f/xxz2TpdKv6uDn6GtHee8ivFyxwxmPuXatBb1FBwxYNuVpbM3k/Y1Z+vC0mH/dIXXrukYfe3qe5J32Dfjg93A==
   /memory-fs/0.4.1:
     dependencies:
       errno: 0.1.7
@@ -8826,8 +8836,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha1-hO0BwKe6OAr+CdkKjBgNzZ0DBDs=
-      tarball: path-type/download/path-type-4.0.0.tgz
+      integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
   /pathval/1.1.0:
     dev: true
     resolution:
@@ -8932,12 +8941,14 @@ packages:
     resolution:
       integrity: sha1-4vTO8OIZ9GPBeas3Rj5OHs3Muvs=
       tarball: pn/download/pn-1.1.0.tgz
-  /pnp-webpack-plugin/1.6.4:
+  /pnp-webpack-plugin/1.6.4_typescript@3.9.7:
     dependencies:
-      ts-pnp: 1.2.0
+      ts-pnp: 1.2.0_typescript@3.9.7
     dev: true
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
     resolution:
       integrity: sha1-yXEaxNxIpoXauvyG+Lbdn434QUk=
       tarball: pnp-webpack-plugin/download/pnp-webpack-plugin-1.6.4.tgz
@@ -10121,6 +10132,13 @@ packages:
       node-sass: ^4.0.0
       sass: ^1.3.0
       webpack: ^4.36.0 || ^5.0.0
+    peerDependenciesMeta:
+      fibers:
+        optional: true
+      node-sass:
+        optional: true
+      sass:
+        optional: true
     resolution:
       integrity: sha1-3r7NjDziQ8dkVPLoKQSCFQOACQ0=
       tarball: sass-loader/download/sass-loader-8.0.2.tgz?cache=0&sync_timestamp=1605197975406&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsass-loader%2Fdownload%2Fsass-loader-8.0.2.tgz
@@ -10169,8 +10187,7 @@ packages:
       node: '>= 8.9.0'
     optional: true
     resolution:
-      integrity: sha1-FxUfdtjq5n+793lgwzxnatn078c=
-      tarball: schema-utils/download/schema-utils-2.7.0.tgz
+      integrity: sha512-0ilKFI6QQF5nxDZLFn2dMjvc4hjg/Wkg7rHd3jK6/A4a1Hl9VFdQWvgB1UMGoU94pad1P/8N7fMcEnLnSiju8A==
   /schema-utils/2.7.1:
     dependencies:
       '@types/json-schema': 7.0.6
@@ -10581,28 +10598,32 @@ packages:
     resolution:
       integrity: sha1-yAdXODwoq/cpZ0SZjLwQaui4VM4=
       tarball: spdx-license-ids/download/spdx-license-ids-3.0.6.tgz
-  /spdy-transport/3.0.0:
+  /spdy-transport/3.0.0_supports-color@6.1.0:
     dependencies:
-      debug: 4.2.0
+      debug: 4.2.0_supports-color@6.1.0
       detect-node: 2.0.4
       hpack.js: 2.1.6
       obuf: 1.1.2
       readable-stream: 3.6.0
       wbuf: 1.7.3
     dev: true
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha1-ANSGOmQArXXfkzYaFghgXl3NzzE=
       tarball: spdy-transport/download/spdy-transport-3.0.0.tgz
-  /spdy/4.0.2:
+  /spdy/4.0.2_supports-color@6.1.0:
     dependencies:
-      debug: 4.2.0
+      debug: 4.2.0_supports-color@6.1.0
       handle-thing: 2.0.1
       http-deceiver: 1.2.7
       select-hose: 2.0.0
-      spdy-transport: 3.0.0
+      spdy-transport: 3.0.0_supports-color@6.1.0
     dev: true
     engines:
       node: '>=6.0.0'
+    peerDependencies:
+      supports-color: '*'
     resolution:
       integrity: sha1-t09GYgOj7aRSwCSSuR+56EonZ3s=
       tarball: spdy/download/spdy-4.0.2.tgz
@@ -10995,8 +11016,7 @@ packages:
     engines:
       node: '>=6'
     resolution:
-      integrity: sha1-ofzMBrWNth/XpF2i2kT186Pme6I=
-      tarball: tapable/download/tapable-1.1.3.tgz
+      integrity: sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
   /tcp-port-used/1.0.1:
     dependencies:
       debug: 4.1.0
@@ -11255,10 +11275,17 @@ packages:
     resolution:
       integrity: sha1-3/o4ebAaGh4KS4XiuEIdwN//HFg=
       tarball: ts-loader/download/ts-loader-6.2.2.tgz
-  /ts-pnp/1.2.0:
+  /ts-pnp/1.2.0_typescript@3.9.7:
+    dependencies:
+      typescript: 3.9.7
     dev: true
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     resolution:
       integrity: sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
       tarball: ts-pnp/download/ts-pnp-1.2.0.tgz
@@ -11492,16 +11519,14 @@ packages:
       node: '>= 10.0.0'
     optional: true
     resolution:
-      integrity: sha1-thodoXPoQ1sv48Z9Kbmt+FlL0W0=
-      tarball: universalify/download/universalify-1.0.0.tgz
+      integrity: sha512-rb6X1W158d7pRQBg5gkR8uPaSfiids68LTJQYOtEUhoJUWBdaQHsuT/EUduxXYxcrt4r5PJ4fuHW1MHT6p0qug==
   /universalify/2.0.0:
     dev: true
     engines:
       node: '>= 10.0.0'
     optional: true
     resolution:
-      integrity: sha1-daSYTv7cSwiXXFrrc/Uw0C3yVxc=
-      tarball: universalify/download/universalify-2.0.0.tgz
+      integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
   /unpipe/1.0.0:
     dev: true
     engines:
@@ -11750,8 +11775,7 @@ packages:
     dev: true
     optional: true
     resolution:
-      integrity: sha1-tqfn8w0o81ZZqD3kH0oYMaQjKgQ=
-      tarball: vue-loader/download/vue-loader-16.0.0-rc.2.tgz
+      integrity: sha512-cz8GK4dgIf1UTC+do80pGvh8BHcCRHLIQVHV9ONVQ8wtoqS9t/+H02rKcQP+TVNg7khgLyQV2+8eHUq7/AFq3g==
   /vue-router/4.0.0-rc.3_vue@3.0.2:
     dependencies:
       vue: 3.0.2
@@ -11921,7 +11945,7 @@ packages:
       serve-index: 1.9.1
       sockjs: 0.3.20
       sockjs-client: 1.4.0
-      spdy: 4.0.2
+      spdy: 4.0.2_supports-color@6.1.0
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.0
@@ -12355,8 +12379,7 @@ packages:
       node: '>= 6'
     optional: true
     resolution:
-      integrity: sha1-O1k63ZRIdgd9TWg/7gEIG9n/8x4=
-      tarball: yaml/download/yaml-1.10.0.tgz
+      integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
   /yargs-parser/13.1.2:
     dependencies:
       camelcase: 5.3.1
@@ -12460,35 +12483,35 @@ packages:
       integrity: sha1-kkEZEtQ1IU4SxRwq4Qk+VLa7g9k=
       tarball: yorkie/download/yorkie-2.0.0.tgz
 specifiers:
-  '@types/chai': ^4.2.11
-  '@types/mocha': ^5.2.4
-  '@typescript-eslint/eslint-plugin': ^2.33.0
-  '@typescript-eslint/parser': ^2.33.0
-  '@vue/cli-plugin-babel': ~4.5.0
-  '@vue/cli-plugin-e2e-nightwatch': ~4.5.0
-  '@vue/cli-plugin-eslint': ~4.5.0
-  '@vue/cli-plugin-pwa': ~4.5.0
-  '@vue/cli-plugin-router': ~4.5.0
-  '@vue/cli-plugin-typescript': ~4.5.0
-  '@vue/cli-plugin-unit-mocha': ~4.5.0
-  '@vue/cli-plugin-vuex': ~4.5.0
-  '@vue/cli-service': ~4.5.0
-  '@vue/compiler-sfc': ^3.0.0
+  '@types/chai': ^4.2.14
+  '@types/mocha': ^5.2.7
+  '@typescript-eslint/eslint-plugin': ^2.34.0
+  '@typescript-eslint/parser': ^2.34.0
+  '@vue/cli-plugin-babel': ~4.5.9
+  '@vue/cli-plugin-e2e-nightwatch': ~4.5.9
+  '@vue/cli-plugin-eslint': ~4.5.9
+  '@vue/cli-plugin-pwa': ~4.5.9
+  '@vue/cli-plugin-router': ~4.5.9
+  '@vue/cli-plugin-typescript': ~4.5.9
+  '@vue/cli-plugin-unit-mocha': ~4.5.9
+  '@vue/cli-plugin-vuex': ~4.5.9
+  '@vue/cli-service': ~4.5.9
+  '@vue/compiler-sfc': ^3.0.2
   '@vue/eslint-config-prettier': ^6.0.0
-  '@vue/eslint-config-typescript': ^5.0.2
-  '@vue/test-utils': ^2.0.0-0
-  chai: ^4.1.2
+  '@vue/eslint-config-typescript': ^5.1.0
+  '@vue/test-utils': ^2.0.0-beta.10
+  chai: ^4.2.0
   chromedriver: ^84.0.1
-  core-js: ^3.6.5
-  eslint: ^6.7.2
-  eslint-plugin-prettier: ^3.1.3
-  eslint-plugin-vue: ^7.0.0-0
+  core-js: ^3.7.0
+  eslint: ^6.8.0
+  eslint-plugin-prettier: ^3.1.4
+  eslint-plugin-vue: ^7.1.0
   prettier: ^1.19.1
   register-service-worker: ^1.7.1
-  sass: ^1.26.5
+  sass: ^1.29.0
   sass-loader: ^8.0.2
-  typescript: ~3.9.3
-  vue: ^3.0.0
-  vue-class-component: ^8.0.0-0
-  vue-router: ^4.0.0-0
-  vuex: ^4.0.0-0
+  typescript: ~3.9.7
+  vue: ^3.0.2
+  vue-class-component: ^8.0.0-beta.4
+  vue-router: ^4.0.0-rc.3
+  vuex: ^4.0.0-rc.1
