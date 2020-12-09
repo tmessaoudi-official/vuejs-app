@@ -1,5 +1,7 @@
 .DS_Store
-node_modules
+/node_modules
+/.pnpm-store
+/.pnpm
 /dist
 
 /tests/e2e/reports/
@@ -14,8 +16,8 @@ geckodriver.log
 
 # Log files
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
 pnpm-debug.log*
 
 # Editor directories and files
